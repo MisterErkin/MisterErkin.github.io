@@ -1,0 +1,37 @@
+// in file 'Code/User/snippets/javascript.json'
+{
+	"For Loop": {
+	  "prefix": ["for", "for-const"],
+	  "body": ["for (const ${2:element} of ${1:array}) {", "\t$0", "}"],
+	  "description": "A for loop."
+	},
+	"Future CV Template": {
+        "prefix": "Cv",
+        "body": [
+            "<!DOCTYPE html>",
+            "<!-- Mesut Erkin Ozokutgen EKFU23 -->",
+            "<html lang=\"en\">",
+            "<head>",
+            "    <meta charset=\"UTF-8\">",
+            "    <title>${1:My Future CV}</title>",
+            "    <link rel=\"stylesheet\" href=\"${2:StyleOfCv.css}\"> <!-- Link to CSS file -->",
+            "</head>",
+            "<body>",
+            "    <h1><b><u>Owner Of This CV</u></b></h1>",
+            "    <p><i>${3:Mesut Erkin Ozokutgen}</i></p>",
+            "",
+            "    <h2><b><u>Age</u></b></h2>",
+            "    <p><i>${4:29 Years Old}</i></p>",
+            "",
+            "    <p><b><u>Group</u></b></p>",
+            "    <p><i>${5:EKFU23}</i></p>",
+            "",
+            "    <p><b><u>Link for LinkedIn</u></b></p>",
+            "    <a href=\"${6:https://www.linkedin.com/in/mesuterkinozokutgen}\" target=\"_blank\">Go To LinkedIn</a>",
+            "</body>",
+            "</html>"
+        ],
+        "description": "Creates a basic HTML structure for a personal CV page with linked CSS."
+    }
+  }
+  
