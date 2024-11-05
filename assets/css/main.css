@@ -945,18 +945,17 @@ section,
 
 /* New CSS for Media Container */
 .media-container {
-  margin-top: 15px; /* Adds space above the media container */
-  display: flex;
-  flex-direction: column; /* Stack media items vertically */
-  gap: 15px; /* Adds space between each media element */
+  margin-top: 20px; /* Space between the description and media */
 }
 
 .media-container video,
 .media-container iframe,
 .media-container audio {
-  max-width: 100%; /* Make sure media fits the container */
-  border-radius: 5px; /* Optional: rounded corners for a cleaner look */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 10px 0; /* Space between each media element */
+  width: 100%; /* Adjust width to fit the container if needed */
+  max-width: 320px; /* Limit max width for consistency */
+}
 
 /*--------------------------------------------------------------
 # Testimonials Section
