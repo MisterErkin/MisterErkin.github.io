@@ -51,7 +51,10 @@
   --surface-color: #151f2b;
   --contrast-color: #ffffff;
 }
-
+/* Apply transitions globally */
+body, .light-background, .dark-background, * {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
 /* Smooth scroll */
 :root {
   scroll-behavior: smooth;
