@@ -224,6 +224,19 @@
             
         }
     });
+    document.getElementById('nightmode-toggle').addEventListener('click', () => {
+      const elements = document.querySelectorAll('.light-background, .dark-background');
+  
+      elements.forEach((element) => {
+          if (element.classList.contains('light-background')) {
+              element.classList.remove('light-background');
+              element.classList.add('dark-background');
+          } else {
+              element.classList.remove('dark-background');
+              element.classList.add('light-background');
+          }
+      });
+  });
 });
 
   /**
