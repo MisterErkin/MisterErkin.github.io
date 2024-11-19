@@ -214,16 +214,7 @@
         body.classList.add('light-background'); // Default theme
     }
 
-    document.getElementById('nightmode-toggle').addEventListener('click', () => {
-        if (body.classList.contains('light-background')) {
-          body.classList.replace('light-background','dark-background')
-            localStorage.setItem('theme', 'dark-background');
-        } else {
-          body.classList.replace('dark-background','light-background')
-            localStorage.setItem('theme', 'light-background');
-            
-        }
-    });
+   
     document.getElementById('nightmode-toggle').addEventListener('click', () => {
       const elements = document.querySelectorAll('.light-background, .dark-background');
   
