@@ -245,7 +245,16 @@ h6 {
   color: var(--contrast-color);
   background-color: color-mix(in srgb, var(--accent-color) 90%, white 15%);
 }
-
+/*--------------------------------------------------------------
+# Nightmode Toggle 
+---------------------------------------------------------------*/
+#nightmode-toggle {
+  width: 24px; /* Set width */
+  height: 24px; /* Set height */
+  object-fit: contain; /* Ensure aspect ratio is maintained */
+  cursor: pointer; /* Optional: make it look clickable */
+  margin-left: 10px; /* Space from social links */
+}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
