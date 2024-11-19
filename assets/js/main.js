@@ -203,6 +203,29 @@
       }
     }
   });
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    const body = document.body;
+    const savedMode = localStorage.getItem('theme');
+
+    if (savedMode) {
+        body.classList.add(savedMode);
+    } else {
+        body.classList.add('light-background'); // Default theme
+    }
+
+    document.getElementById('nightmode-toggle').addEventListener('click', () => {
+        if (body.classList.contains('light-background')) {
+            body.classList.remove('light-background');
+            body.classList.add('dark-background');
+            localStorage.setItem('theme', 'dark-background');
+        } else {
+            body.classList.remove('dark-background');
+            body.classList.add('light-background');
+            localStorage.setItem('theme', 'light-background');
+        }
+    });
+});
 
   /**
    * Navmenu Scrollspy
