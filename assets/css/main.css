@@ -248,7 +248,7 @@ h6 {
 /*--------------------------------------------------------------
 # Nightmode Toggle 
 ---------------------------------------------------------------*/
-.nightmode-toggle {
+#nightmode-toggle {
   width: 24px; /* Set width */
   height: 24px; /* Set height */
   object-fit: contain; /* Ensure aspect ratio is maintained */
