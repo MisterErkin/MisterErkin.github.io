@@ -791,46 +791,7 @@ Driven by a curiosity for technology, I am enthusiastic about applying my skills
                 </div>
             </form>
         </div>
-        <script>
-          document.querySelector('.php-email-form').addEventListener('submit', function (e) {
-              e.preventDefault(); // Prevent default form submission
-      
-              const form = e.target;
-              const formData = new FormData(form);
-      
-              const loadingDiv = document.querySelector('.loading');
-              const errorDiv = document.querySelector('.error-message');
-              const successDiv = document.querySelector('.sent-message');
-      
-              // Show loading text
-              loadingDiv.style.display = 'block';
-              errorDiv.style.display = 'none';
-              successDiv.style.display = 'none';
-      
-              fetch(form.action, {
-                  method: form.method,
-                  body: formData,
-                  headers: {
-                      'Accept': 'application/json',
-                  }
-              })
-                  .then(response => {
-                      loadingDiv.style.display = 'none'; // Hide loading text
-                      if (response.ok) {
-                          successDiv.style.display = 'block'; // Show success message
-                          form.reset(); // Reset form
-                      } else {
-                          errorDiv.textContent = "An error occurred. Please try again.";
-                          errorDiv.style.display = 'block'; // Show error message
-                      }
-                  })
-                  .catch(() => {
-                      loadingDiv.style.display = 'none'; // Hide loading text
-                      errorDiv.textContent = "An error occurred. Please try again.";
-                      errorDiv.style.display = 'block'; // Show error message
-                  });
-          });
-        </script>
+        
 
         </div>
 
