@@ -1006,13 +1006,13 @@ section,
 }
 
 #svg-display h2 {
-  font-size: 24px;
+  font-size: 15px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 #svg-display p {
-  font-size: 16px;
+  font-size: 15px;
   margin-bottom: 20px;
 }
 
@@ -1041,7 +1041,7 @@ section,
 }
 
 .contact .info-item i {
-  font-size: 20px;
+  font-size: 15px;
   color: var(--accent-color);
   background: color-mix(in srgb, var(--accent-color), transparent 92%);
   width: 44px;
@@ -1056,7 +1056,7 @@ section,
 
 .contact .info-item h3 {
   padding: 0;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 700;
   margin-bottom: 5px;
 }
@@ -1248,17 +1248,11 @@ section,
   color: var(--accent-color);
 }
 #sidebar-clock {
-  position: absolute; /* Absolute positioning for precise control */
-  top: 36%; /* Adjust the vertical position (lower values move it higher) */
-  right: 35%; /* Reduce the value to move closer to the right side */
-  background-color: rgba(0, 0, 0, 0); /* Transparent background */
-  padding: 10px; /* Space inside the clock container */
-  border: none; /* No border for cleaner look */
-  text-align: center; /* Center align text */
-  font-family: Arial, sans-serif; /* Font styling */
-  color: white; /* Text color set to white */
-  font-size: 16px; /* Adjust font size as needed */
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); /* Add subtle text shadow for readability */
+  font-size: 12px;
+  display: inline-block;
+  color: white, transparent 50%);
+  line-height: 1;
+  margin-left:40%;
 }
 
 
