@@ -230,6 +230,7 @@
   });
 });
 
+
   /**
    * Navmenu Scrollspy
    */
@@ -253,3 +254,11 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+function updateClock() {
+  const clockElement = document.getElementById('clock');
+  const now = new Date();
+  clockElement.textContent = now.toLocaleTimeString();
+}
+setInterval(updateClock, 1000); // Update every second
+updateClock(); // Initial call to display time immediately

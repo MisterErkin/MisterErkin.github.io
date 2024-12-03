@@ -972,100 +972,55 @@ section,
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
-.testimonials .testimonials-carousel,
-.testimonials .testimonials-slider {
-  overflow: hidden;
-}
-
-.testimonials .testimonial-item {
-  box-sizing: content-box;
+/* Add specific styling for MathML within testimonials */
+.testimonials .mathml-container {
+  display: center;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  min-height: 320px;
-}
-
-.testimonials .testimonial-item .testimonial-img {
-  width: 90px;
-  border-radius: 50%;
-  margin: 0 auto;
-}
-
-.testimonials .testimonial-item h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
-}
-
-.testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-  margin: 0;
-}
-
-.testimonials .testimonial-item .quote-icon-left,
-.testimonials .testimonial-item .quote-icon-right {
-  color: color-mix(in srgb, var(--accent-color), transparent 40%);
-  font-size: 26px;
-  line-height: 0;
-}
-
-.testimonials .testimonial-item .quote-icon-left {
-  display: inline-block;
-  left: -5px;
-  position: relative;
-}
-
-.testimonials .testimonial-item .quote-icon-right {
-  display: inline-block;
-  right: -5px;
-  position: relative;
-  top: 10px;
-  transform: scale(-1, -1);
-}
-
-.testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 0 15px 15px 15px;
+  margin: 20px 0;
   padding: 20px;
   background-color: var(--surface-color);
-  position: relative;
-  margin-bottom: 35px;
-  border-radius: 6px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.testimonials .testimonial-item p::after {
-  content: "";
-  width: 0;
-  height: 0;
-  border-top: 20px solid var(--surface-color);
-  border-right: 20px solid transparent;
-  border-left: 20px solid transparent;
-  position: absolute;
-  bottom: -20px;
-  left: calc(50% - 20px);
+.testimonials .mathml-container h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.testimonials .swiper-wrapper {
+.testimonials .mathml-container math {
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: var(--default-color);
+}
+#svg-display {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: var(--surface-color); /* Adjust color to fit the theme */
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+#svg-display h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#svg-display p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#svg-display .svg-container img {
+  width: 100%;
+  max-width: 500px; /* Ensures the SVG does not exceed a reasonable size */
   height: auto;
 }
-
-.testimonials .swiper-pagination {
-  margin-top: 40px;
-  position: relative;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: var(--background-color);
-  opacity: 1;
-  border: 1px solid var(--accent-color);
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
-}
-
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
@@ -1292,6 +1247,20 @@ section,
   margin-right: 8px;
   color: var(--accent-color);
 }
+#sidebar-clock {
+  position: absolute; /* Absolute positioning for precise control */
+  top: 36%; /* Adjust the vertical position (lower values move it higher) */
+  right: 35%; /* Reduce the value to move closer to the right side */
+  background-color: rgba(0, 0, 0, 0); /* Transparent background */
+  padding: 10px; /* Space inside the clock container */
+  border: none; /* No border for cleaner look */
+  text-align: center; /* Center align text */
+  font-family: Arial, sans-serif; /* Font styling */
+  color: white; /* Text color set to white */
+  font-size: 16px; /* Adjust font size as needed */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); /* Add subtle text shadow for readability */
+}
+
 
 /*--------------------------------------------------------------
 # Starter Section Section
