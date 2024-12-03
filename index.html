@@ -504,7 +504,7 @@ Driven by a curiosity for technology, I am enthusiastic about applying my skills
     </section><!-- /Portfolio Section -->
 
     <!-- Services Section -->
-    <section id="services" class="services section">
+    <section id="services" class="services section" >
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -564,7 +564,7 @@ Driven by a curiosity for technology, I am enthusiastic about applying my skills
               <p class="description">Constantly improving my technical skills and knowledge through personal projects, online courses, and hands-on experience. Flexible and adaptable to new technologies and methodologies.</p>
             </div>
           </div><!-- End Service Item -->
-
+        </section>
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
             <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
             <div>
@@ -868,37 +868,120 @@ Driven by a curiosity for technology, I am enthusiastic about applying my skills
           <div class="col-lg-7">
             <form action="https://formspree.io/f/xovqykla" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
                 <div class="row gy-4">
-        
-                    <div class="col-md-6">
-                        <label for="name-field" class="pb-2">Your Name</label>
-                        <input type="text" name="name" id="name-field" class="form-control" required>
-                    </div>
-        
-                    <div class="col-md-6">
-                        <label for="email-field" class="pb-2">Your Email</label>
-                        <input type="email" class="form-control" name="email" id="email-field" required>
-                    </div>
-        
-                    <div class="col-md-12">
-                        <label for="subject-field" class="pb-2">Subject</label>
-                        <input type="text" class="form-control" name="subject" id="subject-field" required>
-                    </div>
-        
-                    <div class="col-md-12">
-                        <label for="message-field" class="pb-2">Message</label>
-                        <textarea class="form-control" name="message" rows="10" id="message-field" required></textarea>
-                    </div>
-        
-                    <div class="col-md-12 text-center">
-                        <!-- Optional loading and message placeholders -->
-                        <div class="loading" style="display: none;">Loading...</div>
-                        <div class="error-message" style="display: none; color: red;">Error: Please try again.</div>
-                        <div class="sent-message" style="display: none; color: green;">Your message has been sent. Thank you!</div>
-        
-                        <button type="submit">Send Message</button>
-                    </div>
-        
-                </div>
+                      <div class="col-md-6">
+                          <label for="first-name" class="pb-2">First Name</label>
+                          <input type="text" name="first-name" id="first-name" class="form-control" required>
+                      </div>
+                      <div class="col-md-6">
+                          <label for="last-name" class="pb-2">Last Name</label>
+                          <input type="text" name="last-name" id="last-name" class="form-control" required>
+                      </div>
+                      <div class="col-md-6">
+                          <label for="email" class="pb-2">Email Address</label>
+                          <input type="email" name="email" id="email" class="form-control" required>
+                      </div>
+                      <div class="col-md-6">
+                          <label for="phone" class="pb-2">Phone Number</label>
+                          <input type="tel" name="phone" id="phone" class="form-control" required>
+                      </div>
+                      <div class="col-md-12">
+                          <label for="address" class="pb-2">Address</label>
+                          <textarea name="address" id="address" class="form-control" required></textarea>
+                      </div>
+                      <!-- Additional questions -->
+                      <div class="col-md-12">
+                          <label class="pb-2">Rate the following on a scale of 1 to 10:</label>
+                      </div>
+                      <div class="col-md-12">
+                          <label for= "q1" class="pb-2">How satisfied are you with our website?</label>
+                          <select name="rating_message" class="form-control" required>
+                            <option value="" disabled selected>Select a rating</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+
+                      </div>
+                      <div class="col-md-12">
+                          <label for ="q2" class="pb-2">How likely are you to Hire Me?</label>
+                          <select name="rating_message" class="form-control" required>
+                            <option value="" disabled selected>Select a rating</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+
+                      </div>
+                      <div class="col-md-12">
+                          <label for= "q3" class="pb-2">How user-friendly do you find our website?</label>
+                          <select name="rating_message" class="form-control" required>
+                            <option value="" disabled selected>Select a rating</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+
+                      </div>
+                      <div class="col-md-12">
+                          <label for= "q4" class="pb-2">How well does our website meet your needs?</label>
+                          <select name="rating_message" class="form-control" required>
+                            <option value="" disabled selected>Select a rating</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+
+                      </div>
+                      <div class="col-md-12">
+                          <label for= "q5" class="pb-2">How visually appealing is our website?</label>
+                          <select name="rating_message" class="form-control" required>
+                            <option value="" disabled selected>Select a rating</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+
+                      </div>
+                      
+                  </div>
+                  <div class="text-center">
+                  <button type="button" id="submit-btn">Submit</button>
+              </div>
             </form>
         </div>
         
@@ -909,7 +992,7 @@ Driven by a curiosity for technology, I am enthusiastic about applying my skills
 
     </section><!-- /Contact Section -->
 
-  </main>
+
 
   <footer id="footer" class="footer position-relative light-background">
 
@@ -936,7 +1019,6 @@ Driven by a curiosity for technology, I am enthusiastic about applying my skills
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -946,7 +1028,6 @@ Driven by a curiosity for technology, I am enthusiastic about applying my skills
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js" integrity="sha512-yVhZAE0yXtVoYNQAfh9kJ2PHlshB15+yBXMyHttOWb8BIAxjXUwImHCel+cxoiMDfRljOqElHgIfUItCxGAjVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
