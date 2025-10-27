@@ -72,10 +72,11 @@ namespace UtilityLibrary
             // Using ?? operator
             string name = firstName ?? lastName ?? defaultName ?? "N/A";
             
-            // Using ?.
+            // Using ?. operator - check length safely
             int? length = firstName?.Length;
+            string nameInfo = length.HasValue ? $"{name} (length: {length})" : name;
             
-            return name;
+            return nameInfo;
         }
 
         // Method using pattern matching (Requirement 21)
